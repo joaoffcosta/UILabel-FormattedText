@@ -17,7 +17,6 @@
 		EFDDDE4F16E0D66B007EB20A /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EFDDDE4E16E0D66B007EB20A /* Default@2x.png */; };
 		EFDDDE5116E0D66B007EB20A /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EFDDDE5016E0D66B007EB20A /* Default-568h@2x.png */; };
 		EFDDDE5416E0D66B007EB20A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EFDDDE5316E0D66B007EB20A /* ViewController.m */; };
-		EFDDDE5716E0D66B007EB20A /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EFDDDE5516E0D66B007EB20A /* ViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,7 +35,6 @@
 		EFDDDE5016E0D66B007EB20A /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		EFDDDE5216E0D66B007EB20A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		EFDDDE5316E0D66B007EB20A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		EFDDDE5616E0D66B007EB20A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,7 +85,6 @@
 				EFDDDE4A16E0D66B007EB20A /* AppDelegate.m */,
 				EFDDDE5216E0D66B007EB20A /* ViewController.h */,
 				EFDDDE5316E0D66B007EB20A /* ViewController.m */,
-				EFDDDE5516E0D66B007EB20A /* ViewController.xib */,
 				EFDDDE4116E0D66B007EB20A /* Supporting Files */,
 			);
 			path = "UILabel+FormattedText";
@@ -162,7 +159,6 @@
 				EFDDDE4D16E0D66B007EB20A /* Default.png in Resources */,
 				EFDDDE4F16E0D66B007EB20A /* Default@2x.png in Resources */,
 				EFDDDE5116E0D66B007EB20A /* Default-568h@2x.png in Resources */,
-				EFDDDE5716E0D66B007EB20A /* ViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -188,14 +184,6 @@
 				EFDDDE4416E0D66B007EB20A /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		EFDDDE5516E0D66B007EB20A /* ViewController.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				EFDDDE5616E0D66B007EB20A /* en */,
-			);
-			name = ViewController.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
