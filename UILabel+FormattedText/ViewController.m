@@ -8,6 +8,8 @@
 
 #import "ViewController.h"
 
+#import "UILabel+FormattedText.h"
+
 @interface ViewController ()
 
 @end
@@ -28,6 +30,8 @@
     [labelC setNumberOfLines:2];
     [labelC setTextColor:[UIColor yellowColor]];
     [labelC setFont:[UIFont fontWithName:@"Courier" size:14]];
+    [labelC setTextColor:[UIColor redColor] range:NSMakeRange(20, 3)];
+    [labelC setTextColor:[UIColor cyanColor] range:NSMakeRange(28, 4)];
     [self.view addSubview:labelC];
 
     // Fonts
@@ -39,6 +43,8 @@
     [labelF setNumberOfLines:2];
     [labelF setTextColor:[UIColor yellowColor]];
     [labelF setFont:[UIFont fontWithName:@"Courier" size:14]];
+    [labelF setFont:[UIFont fontWithName:@"Courier-Bold" size:14] range:NSMakeRange(20, 4)];
+    [labelF setFont:[UIFont fontWithName:@"Courier-Oblique" size:14] range:NSMakeRange(29, 6)];
     [self.view addSubview:labelF];
     
 
@@ -51,6 +57,10 @@
     [labelCF setNumberOfLines:2];
     [labelCF setTextColor:[UIColor yellowColor]];
     [labelCF setFont:[UIFont fontWithName:@"Courier" size:14]];
+    [labelCF setTextColor:[UIColor redColor] range:NSMakeRange(20, 8)];
+    [labelCF setFont:[UIFont fontWithName:@"Courier-Bold" size:14] range:NSMakeRange(20, 8)];
+    [labelCF setTextColor:[UIColor cyanColor] range:NSMakeRange(33, 11)];
+    [labelCF setFont:[UIFont fontWithName:@"Courier-Oblique" size:14] range:NSMakeRange(33, 11)];
     [self.view addSubview:labelCF];
     
 }
