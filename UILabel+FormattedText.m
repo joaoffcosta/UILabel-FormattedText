@@ -30,4 +30,29 @@
     [self setAttributedText: text];
 }
 
+
+- (void)setTextColor:(UIColor *)textColor afterOccurenceOfString:(NSString*)separator{
+
+    NSRange range = [self.text rangeOfString:separator];
+    
+    if (range.location != NSNotFound)
+    {
+        range.location ++;
+        range.length = self.text.length - range.location;
+        [self setTextColor:textColor range:range];
+    }
+}
+
+- (void)setFont:(UIFont *)font afterOccurenceOfString:(NSString*)separator{
+    
+    NSRange range = [self.text rangeOfString:separator];
+    
+    if (range.location != NSNotFound)
+    {
+        range.location ++;
+        range.length = self.text.length - range.location;
+        [self setFont:font range:range];
+    }
+}
+
 @end

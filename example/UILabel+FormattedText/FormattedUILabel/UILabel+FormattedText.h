@@ -13,4 +13,7 @@
 - (void)setTextColor:(UIColor *)textColor range:(NSRange)range;
 - (void)setFont:(UIFont *)font range:(NSRange)range;
 
+- (void)setTextColor:(UIColor *)textColor afterOccurenceOfString:(NSString*)separator;
+- (void)setFont:(UIFont *)font afterOccurenceOfString:(NSString*)separator;
+
 @end
