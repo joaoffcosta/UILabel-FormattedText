@@ -16,4 +16,6 @@
 - (void)setTextColor:(UIColor *)textColor afterOccurenceOfString:(NSString*)separator;
 - (void)setFont:(UIFont *)font afterOccurenceOfString:(NSString*)separator;
 
+- (void)setTextColor:(UIColor *)textColor fromOccurenceOfString:(NSString*)separator1 toOccurenceOfString:(NSString*)separator2;
+
 @end
