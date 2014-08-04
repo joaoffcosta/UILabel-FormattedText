@@ -78,4 +78,25 @@
     }
 }
 
+
+- (void)setTextColor:(UIColor *)textColor fromOccurenceOfString:(NSString*)separator1 toOccurenceOfString:(NSString*)separator2
+{
+    NSRange rangeFrom = [self.text rangeOfString:separator1];
+    NSRange rangeTo = [self.text rangeOfString:separator2 options:0 range:NSMakeRange(rangeFrom.location,self.text.length-rangeFrom.location)];
+    
+    if (rangeFrom.location != NSNotFound && rangeTo.location == NSNotFound)
+    {
+        rangeFrom.location ++;
+        rangeFrom.length = self.text.length - rangeFrom.location;
+        [self setTextColor:textColor range:rangeFrom];
+    }
+    else if (rangeFrom.location != NSNotFound && rangeTo.location != NSNotFound)
+    {
+        rangeFrom.location ++;
+        rangeFrom.length = rangeTo.location - rangeFrom.location;
+        [self setTextColor:textColor range:rangeFrom];
+    }
+}
+
+
 @end
