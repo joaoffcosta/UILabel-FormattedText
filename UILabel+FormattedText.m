@@ -30,6 +30,17 @@
     [self setAttributedText: text];
 }
 
+- (void)setTextColor:(UIColor *)textColor beforeOccurenceOfString:(NSString*)separator{
+
+    NSRange range = [self.text rangeOfString:separator];
+
+    if (range.location != NSNotFound)
+    {
+        range.length = range.location;
+        range.location = 0;
+        [self setTextColor:textColor range:range];
+    }
+}
 
 - (void)setTextColor:(UIColor *)textColor afterOccurenceOfString:(NSString*)separator{
 
@@ -40,6 +51,18 @@
         range.location ++;
         range.length = self.text.length - range.location;
         [self setTextColor:textColor range:range];
+    }
+}
+
+- (void)setFont:(UIFont *)font beforeOccurenceOfString:(NSString*)separator{
+
+    NSRange range = [self.text rangeOfString:separator];
+
+    if (range.location != NSNotFound)
+    {
+        range.length = range.location;
+        range.location = 0;
+        [self setFont:font range:range];
     }
 }
 
