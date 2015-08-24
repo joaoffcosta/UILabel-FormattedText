@@ -18,4 +18,10 @@
 - (void)setFont:(UIFont *)font beforeOccurenceOfString:(NSString*)separator;
 - (void)setFont:(UIFont *)font afterOccurenceOfString:(NSString*)separator;
 
+- (void)setTextUnderLine:(UIColor *)lineColor range:(NSRange)range;
+- (void)setTextWithoutUnderLineInRange:(NSRange)range;
+- (void)setTextColor:(UIColor *)textColor String:(NSString*)searchString;
+- (void)setTextColor:(UIColor *)textColor String:(NSString*)searchString underLineColor:(UIColor*)underlineColor;
+- (void)setTextColor:(UIColor *)textColor fromOccurenceOfString:(NSString*)separator1 toOccurenceOfString:(NSString*)separator2;
+
 @end
