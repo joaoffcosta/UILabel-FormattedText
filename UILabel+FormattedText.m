@@ -48,7 +48,6 @@
     
     if (range.location != NSNotFound)
     {
-        range.location ++;
         range.length = self.text.length - range.location;
         [self setTextColor:textColor range:range];
     }
@@ -72,7 +71,6 @@
     
     if (range.location != NSNotFound)
     {
-        range.location ++;
         range.length = self.text.length - range.location;
         [self setFont:font range:range];
     }
@@ -131,8 +129,6 @@
     
     if (rangeFrom.location != NSNotFound)
     {
-        rangeFrom.location ++;
-        
         if ( rangeTo.location == NSNotFound)
             rangeFrom.length = self.text.length - rangeFrom.location;
         else
