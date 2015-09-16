@@ -7,21 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EFF000C51BAA235600A6A3AE /* UILabel+FormattedText.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF000C41BAA235600A6A3AE /* UILabel+FormattedText.swift */; settings = {ASSET_TAGS = (); }; };
 		EFFCF7AB1BA99A660096F07D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFFCF7AA1BA99A660096F07D /* AppDelegate.swift */; };
 		EFFCF7AD1BA99A660096F07D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFFCF7AC1BA99A660096F07D /* ViewController.swift */; };
 		EFFCF7B21BA99A660096F07D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFFCF7B11BA99A660096F07D /* Assets.xcassets */; };
 		EFFCF7B51BA99A660096F07D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFFCF7B31BA99A660096F07D /* LaunchScreen.storyboard */; };
-		EFFCF7BD1BA99EFC0096F07D /* UILabel+FormattedText.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFFCF7BC1BA99EFC0096F07D /* UILabel+FormattedText.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EFF000C41BAA235600A6A3AE /* UILabel+FormattedText.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UILabel+FormattedText.swift"; path = "../../UILabel+FormattedText.swift"; sourceTree = "<group>"; };
 		EFFCF7A71BA99A660096F07D /* UILabel+FormattedText.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "UILabel+FormattedText.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFFCF7AA1BA99A660096F07D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EFFCF7AC1BA99A660096F07D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		EFFCF7B11BA99A660096F07D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EFFCF7B41BA99A660096F07D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EFFCF7B61BA99A660096F07D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EFFCF7BC1BA99EFC0096F07D /* UILabel+FormattedText.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UILabel+FormattedText.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,7 +56,7 @@
 			children = (
 				EFFCF7AA1BA99A660096F07D /* AppDelegate.swift */,
 				EFFCF7AC1BA99A660096F07D /* ViewController.swift */,
-				EFFCF7BC1BA99EFC0096F07D /* UILabel+FormattedText.swift */,
+				EFF000C41BAA235600A6A3AE /* UILabel+FormattedText.swift */,
 				EFFCF7B11BA99A660096F07D /* Assets.xcassets */,
 				EFFCF7B31BA99A660096F07D /* LaunchScreen.storyboard */,
 				EFFCF7B61BA99A660096F07D /* Info.plist */,
@@ -133,7 +133,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EFFCF7AD1BA99A660096F07D /* ViewController.swift in Sources */,
-				EFFCF7BD1BA99EFC0096F07D /* UILabel+FormattedText.swift in Sources */,
+				EFF000C51BAA235600A6A3AE /* UILabel+FormattedText.swift in Sources */,
 				EFFCF7AB1BA99A660096F07D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
