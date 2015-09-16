@@ -10,11 +10,8 @@
 		EFDDDE3B16E0D66B007EB20A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFDDDE3A16E0D66B007EB20A /* UIKit.framework */; };
 		EFDDDE3D16E0D66B007EB20A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFDDDE3C16E0D66B007EB20A /* Foundation.framework */; };
 		EFDDDE3F16E0D66B007EB20A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFDDDE3E16E0D66B007EB20A /* CoreGraphics.framework */; };
-		EFDDDE4516E0D66B007EB20A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EFDDDE4316E0D66B007EB20A /* InfoPlist.strings */; };
 		EFDDDE4716E0D66B007EB20A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EFDDDE4616E0D66B007EB20A /* main.m */; };
 		EFDDDE4B16E0D66B007EB20A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EFDDDE4A16E0D66B007EB20A /* AppDelegate.m */; };
-		EFDDDE4D16E0D66B007EB20A /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = EFDDDE4C16E0D66B007EB20A /* Default.png */; };
-		EFDDDE4F16E0D66B007EB20A /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EFDDDE4E16E0D66B007EB20A /* Default@2x.png */; };
 		EFDDDE5116E0D66B007EB20A /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EFDDDE5016E0D66B007EB20A /* Default-568h@2x.png */; };
 		EFDDDE5416E0D66B007EB20A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EFDDDE5316E0D66B007EB20A /* ViewController.m */; };
 		EFFCF77F1BA995AA0096F07D /* UILabel+FormattedText.m in Sources */ = {isa = PBXBuildFile; fileRef = EFFCF77E1BA995AA0096F07D /* UILabel+FormattedText.m */; settings = {ASSET_TAGS = (); }; };
@@ -26,13 +23,9 @@
 		EFDDDE3C16E0D66B007EB20A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		EFDDDE3E16E0D66B007EB20A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		EFDDDE4216E0D66B007EB20A /* UILabel+FormattedText-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "UILabel+FormattedText-Info.plist"; sourceTree = "<group>"; };
-		EFDDDE4416E0D66B007EB20A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		EFDDDE4616E0D66B007EB20A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		EFDDDE4816E0D66B007EB20A /* UILabel+FormattedText-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UILabel+FormattedText-Prefix.pch"; sourceTree = "<group>"; };
 		EFDDDE4916E0D66B007EB20A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		EFDDDE4A16E0D66B007EB20A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		EFDDDE4C16E0D66B007EB20A /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
-		EFDDDE4E16E0D66B007EB20A /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		EFDDDE5016E0D66B007EB20A /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		EFDDDE5216E0D66B007EB20A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		EFDDDE5316E0D66B007EB20A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
@@ -98,11 +91,7 @@
 			isa = PBXGroup;
 			children = (
 				EFDDDE4216E0D66B007EB20A /* UILabel+FormattedText-Info.plist */,
-				EFDDDE4316E0D66B007EB20A /* InfoPlist.strings */,
 				EFDDDE4616E0D66B007EB20A /* main.m */,
-				EFDDDE4816E0D66B007EB20A /* UILabel+FormattedText-Prefix.pch */,
-				EFDDDE4C16E0D66B007EB20A /* Default.png */,
-				EFDDDE4E16E0D66B007EB20A /* Default@2x.png */,
 				EFDDDE5016E0D66B007EB20A /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
@@ -143,7 +132,7 @@
 		EFDDDE2F16E0D66B007EB20A /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0460;
+				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = none;
 			};
 			buildConfigurationList = EFDDDE3216E0D66B007EB20A /* Build configuration list for PBXProject "UILabel+FormattedText" */;
@@ -168,9 +157,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EFDDDE4516E0D66B007EB20A /* InfoPlist.strings in Resources */,
-				EFDDDE4D16E0D66B007EB20A /* Default.png in Resources */,
-				EFDDDE4F16E0D66B007EB20A /* Default@2x.png in Resources */,
 				EFDDDE5116E0D66B007EB20A /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -191,17 +177,6 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXVariantGroup section */
-		EFDDDE4316E0D66B007EB20A /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				EFDDDE4416E0D66B007EB20A /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
-
 /* Begin XCBuildConfiguration section */
 		EFDDDE5816E0D66B007EB20A /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -217,6 +192,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -263,8 +239,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "UILabel+FormattedText/UILabel+FormattedText-Prefix.pch";
+				GCC_PREFIX_HEADER = "";
 				INFOPLIST_FILE = "UILabel+FormattedText/UILabel+FormattedText-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "none.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -274,8 +251,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "UILabel+FormattedText/UILabel+FormattedText-Prefix.pch";
+				GCC_PREFIX_HEADER = "";
 				INFOPLIST_FILE = "UILabel+FormattedText/UILabel+FormattedText-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "none.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
