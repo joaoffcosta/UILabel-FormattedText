@@ -11,7 +11,7 @@ import UIKit
 class ViewController: UIViewController {
     private let sep: CGFloat = 20
     private let hei: CGFloat = 40
-
+    
     private let yellow = UIColor.yellowColor()
     private let red = UIColor.redColor()
     private let cyan = UIColor.cyanColor()
@@ -36,7 +36,7 @@ class ViewController: UIViewController {
         title.textColor = yellow
         title.text = "UILabel+FormattedText"
         title.setTextUnderline(yellow, range: title.fullRange())
-
+        
         views = [
             ("Ranges", rangesView()),
             ("At String", atStringView()),
@@ -60,7 +60,7 @@ class ViewController: UIViewController {
         next?.contentHorizontalAlignment = .Right
         next?.addTarget(self, action: "nextButtonTapped", forControlEvents: .TouchUpInside)
         view.addSubview(next!)
-
+        
         refreshState()
     }
     
@@ -132,20 +132,20 @@ class ViewController: UIViewController {
         // Colors
         let label1 = labelAt(1, view: aview)
         label1.text = "This is a text with\nRED and CYAN."
-        label1.setTextColor(red, range: label1.rangeOf("RED"))
-        label1.setTextColor(cyan, range: label1.rangeOf("CYAN"))
+        label1.setTextColor(red, string: "RED")
+        label1.setTextColor(cyan, string: "CYAN")
         
         // Fonts
         let label2 = labelAt(2, view: aview)
         label2.text = "This is a text with\nBOLD and ITALIC"
-        label2.setFont(bold, range: label2.rangeOf("BOLD"))
-        label2.setFont(italic, range: label2.rangeOf("ITALIC"))
+        label2.setFont(bold, string: "BOLD")
+        label2.setFont(italic, string: "ITALIC")
         
         // Underline
         let label3 = labelAt(3, view: aview)
         label3.text = "This is a text with\nFULL UNDERLINE and UNDERLINE BY WORD"
-        label3.setTextUnderline(red, range: label3.rangeOf("FULL UNDERLINE"))
-        label3.setTextUnderline(cyan, range: label3.rangeOf("UNDERLINE BY WORD"), byWord: true)
+        label3.setTextUnderline(red, string: "FULL UNDERLINE")
+        label3.setTextUnderline(cyan, string: "UNDERLINE BY WORD", byWord: true)
         
         return aview
     }
@@ -158,23 +158,23 @@ class ViewController: UIViewController {
         // After
         let label1 = labelAt(1, view: aview)
         label1.text = "The after text is:\nRED with some BOLD and UNDERLINE."
-        label1.setTextColor(red, range: label1.rangeAfter("RED"))
-        label1.setFont(bold, range: label1.rangeAfter("BOLD"))
-        label1.setTextUnderline(red, range: label1.rangeAfter("UNDERLINE"))
+        label1.setTextColor(red, after: "RED")
+        label1.setFont(bold, after: "BOLD")
+        label1.setTextUnderline(red, after: "UNDERLINE")
         
         // Before
         let label2 = labelAt(2, view: aview)
         label2.text = "This before text is:\nRED with some BOLD and UNDERLINE."
-        label2.setTextColor(red, range: label2.rangeBefore("RED"))
-        label2.setFont(bold, range: label2.rangeBefore("BOLD"))
-        label2.setTextUnderline(red, range: label2.rangeBefore("UNDERLINE"))
+        label2.setTextColor(red, before: "RED")
+        label2.setFont(bold, before: "BOLD")
+        label2.setTextUnderline(red, before: "UNDERLINE")
         
         // After & Before
         let label3 = labelAt(3, view: aview)
         label3.text = "The following text is:\nRED and BOLD and UNDERLINE."
-        label3.setTextColor(red, range: label3.rangeAfter("\n", before: "."))
-        label3.setFont(bold, range: label3.rangeAfter("\n", before: "."))
-        label3.setTextUnderline(red, range: label3.rangeAfter("\n", before: "."))
+        label3.setTextColor(red, after: "\n", before: ".")
+        label3.setFont(bold, after: "\n", before: ".")
+        label3.setTextUnderline(red, after: "\n", before: ".")
         
         return aview
     }
@@ -187,23 +187,23 @@ class ViewController: UIViewController {
         // After
         let label1 = labelAt(1, view: aview)
         label1.text = "The text from these points is:\nRED with some BOLD and UNDERLINE."
-        label1.setTextColor(red, range: label1.rangeFrom("RED"))
-        label1.setFont(bold, range: label1.rangeFrom("BOLD"))
-        label1.setTextUnderline(red, range: label1.rangeFrom("UNDERLINE"))
+        label1.setTextColor(red, from: "RED")
+        label1.setFont(bold, from: "BOLD")
+        label1.setTextUnderline(red, from: "UNDERLINE")
         
         // Before
         let label2 = labelAt(2, view: aview)
         label2.text = "The text to these points is:\nRED with some BOLD and UNDERLINE."
-        label2.setTextColor(red, range: label2.rangeTo("RED"))
-        label2.setFont(bold, range: label2.rangeTo("BOLD"))
-        label2.setTextUnderline(red, range: label2.rangeTo("UNDERLINE"))
+        label2.setTextColor(red, to: "RED")
+        label2.setFont(bold, to: "BOLD")
+        label2.setTextUnderline(red, to: "UNDERLINE")
         
         // After & Before
         let label3 = labelAt(3, view: aview)
         label3.text = "The following text is:\nRED and BOLD and UNDERLINE."
-        label3.setTextColor(red, range: label3.rangeFrom("RED", to: "UNDERLINE"))
-        label3.setFont(bold, range: label3.rangeFrom("RED", to: "UNDERLINE"))
-        label3.setTextUnderline(red, range: label3.rangeFrom("RED", to: "UNDERLINE"))
+        label3.setTextColor(red, from: "RED", to: "UNDERLINE")
+        label3.setFont(bold, from: "RED", to: "UNDERLINE")
+        label3.setTextUnderline(red, from: "RED", to: "UNDERLINE")
         
         return aview
     }
