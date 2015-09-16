@@ -17,7 +17,7 @@
 		EFDDDE4F16E0D66B007EB20A /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EFDDDE4E16E0D66B007EB20A /* Default@2x.png */; };
 		EFDDDE5116E0D66B007EB20A /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EFDDDE5016E0D66B007EB20A /* Default-568h@2x.png */; };
 		EFDDDE5416E0D66B007EB20A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EFDDDE5316E0D66B007EB20A /* ViewController.m */; };
-		EFDDDE6016E0D7C2007EB20A /* UILabel+FormattedText.m in Sources */ = {isa = PBXBuildFile; fileRef = EFDDDE5F16E0D7C2007EB20A /* UILabel+FormattedText.m */; };
+		EFFCF77F1BA995AA0096F07D /* UILabel+FormattedText.m in Sources */ = {isa = PBXBuildFile; fileRef = EFFCF77E1BA995AA0096F07D /* UILabel+FormattedText.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,8 +36,8 @@
 		EFDDDE5016E0D66B007EB20A /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		EFDDDE5216E0D66B007EB20A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		EFDDDE5316E0D66B007EB20A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		EFDDDE5E16E0D7C2007EB20A /* UILabel+FormattedText.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+FormattedText.h"; sourceTree = "<group>"; };
-		EFDDDE5F16E0D7C2007EB20A /* UILabel+FormattedText.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+FormattedText.m"; sourceTree = "<group>"; };
+		EFFCF77D1BA995AA0096F07D /* UILabel+FormattedText.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UILabel+FormattedText.h"; path = "../../../UILabel+FormattedText.h"; sourceTree = "<group>"; };
+		EFFCF77E1BA995AA0096F07D /* UILabel+FormattedText.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UILabel+FormattedText.m"; path = "../../../UILabel+FormattedText.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,8 +111,8 @@
 		EFDDDE5D16E0D7C2007EB20A /* FormattedUILabel */ = {
 			isa = PBXGroup;
 			children = (
-				EFDDDE5E16E0D7C2007EB20A /* UILabel+FormattedText.h */,
-				EFDDDE5F16E0D7C2007EB20A /* UILabel+FormattedText.m */,
+				EFFCF77D1BA995AA0096F07D /* UILabel+FormattedText.h */,
+				EFFCF77E1BA995AA0096F07D /* UILabel+FormattedText.m */,
 			);
 			path = FormattedUILabel;
 			sourceTree = "<group>";
@@ -184,8 +184,8 @@
 			files = (
 				EFDDDE4716E0D66B007EB20A /* main.m in Sources */,
 				EFDDDE4B16E0D66B007EB20A /* AppDelegate.m in Sources */,
+				EFFCF77F1BA995AA0096F07D /* UILabel+FormattedText.m in Sources */,
 				EFDDDE5416E0D66B007EB20A /* ViewController.m in Sources */,
-				EFDDDE6016E0D7C2007EB20A /* UILabel+FormattedText.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,6 +300,7 @@
 				EFDDDE5C16E0D66B007EB20A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
