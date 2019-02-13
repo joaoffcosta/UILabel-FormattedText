@@ -82,7 +82,7 @@ extension UILabel {
     public func set(underlineColor: UIColor, range: NSRange?, byWord: Bool = false) {
         guard let range = range else { return }
         let text = mutableAttributedString
-        var style = NSUnderlineStyle.styleSingle.rawValue
+        var style = NSUnderlineStyle.single.rawValue
         if byWord { style = style | NSUnderlineStyle.byWord.rawValue }
         text.addAttribute(.underlineStyle, value: NSNumber(value: style), range: range)
         text.addAttribute(.underlineColor, value: underlineColor, range: range)
