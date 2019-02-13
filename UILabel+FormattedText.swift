@@ -3,7 +3,7 @@
 //  UILabel+FormattedText
 //
 //  Created by João Costa on 16/09/15.
-//  Update by João Costa on 14/09/18.
+//  Updated by João Costa on 13/02/19.
 //
 //
 
